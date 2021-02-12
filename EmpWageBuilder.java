@@ -11,12 +11,12 @@ public class EmpWageBuilder
 			switch (empCheck ) {
 				case IS_PRESENT:
 					empHrs = 8;
-               break;
-            case IS_PART_TIME:
-               empHrs = 4;
-               break;
-            default:
-               empHrs = 0;
+					break;
+            	case IS_PART_TIME:
+               		empHrs = 4;
+               		break;
+            	default:
+               		empHrs = 0;
          }
          totalEmpHrs += empHrs;
          System.out.println("For Day # : " + totalWorkingDays + " Worked EmpHrs are : " + empHrs );
@@ -27,8 +27,8 @@ public class EmpWageBuilder
 	
 	public static void main(String args[]) {
 		System.out.println("Welcome to Employee Wage Computation Program");
-      calEmpWageForCompany("DMART", 20, 2, 100);
-      calEmpWageForCompany("VISION", 400, 8, 16);
+      	calEmpWageForCompany("DMART", 20, 2, 100);
+      	calEmpWageForCompany("VISION", 400, 8, 16);
 	}
 }
 
